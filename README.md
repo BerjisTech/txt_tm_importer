@@ -21,7 +21,22 @@ gem 'txt_tm_importer'
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Get the high level stats of .txt translation memory file
+# Including the encoding is optional. If not included the gem will attempt to detect the encoding.
+file_path = File.expand_path('../txt_tm_importer/spec/sample_files/sampletxt')
+tm = TxtTmImporter::Tm.new(file_path: file_path)
+tm.stats
+# => {:tu_count=>2, :seg_count=>4, :language_pairs=>[["de-DE", "en-US"]]}
+
+# Extract the segments of a .txt translation memory file
+# Result: [translation_units, segments]
+# translation_units = [tu_id, creation_date]
+# segments = [tu_id, segment_role, word_count, language, segment_text, creation_date]
+
+tm.import
+# => [[["3638-1457683912-1", "2016-03-11T17:11:52+09:00"], ["7214-1457683912-3", "2016-03-11T17:11:52+09:00"]], [["3638-1457683912-1", "", 1, "de-DE", "überprüfen", "2016-03-11T17:11:52+09:00"], ["3638-1457683912-1", "target", 1, "en-US", "check", "2016-03-11T17:11:52+09:00"], ["7214-1457683912-3", "source", 1, "de-DE", "Rückenlehneneinstellung", "2016-03-11T17:11:52+09:00"], ["7214-1457683912-3", "target", 2, "en-US", "Backrest adjustment", "2016-03-11T17:11:52+09:00"]]]
+```
 
 ## Contributing
 

@@ -1,0 +1,107 @@
+<RTF Preamble>
+<FontTable>
+{\fonttbl
+{\f1 \fmodern\fprq1 \fcharset0 Courier New;}
+{\f2 \fswiss\fprq2 \fcharset0 Arial;}
+{\f3 \froman\fprq2 {\*\panose 02020603050405020304}\fcharset0 Times New Roman;}
+{\f4 \froman\fprq2 {\*\panose 02030600000101010101}{\*\falt \'a9\'f6UAA}\fcharset129 Batang;}
+{\f5 \fswiss\fprq2 {\*\panose 020f0502020204030204}\fcharset0 Calibri;}
+{\f6 \fswiss\fprq0 {\*\panose 00000000000000000000}{\*\falt Univers 47 CondensedLight}\fcharset0 Univers 47 CondensedLight;}
+{\f7 \froman\fprq2 {\*\panose 02030600000101010101}\fcharset129 @Batang;}
+{\f8 \fswiss\fprq0 {\*\panose 00000000000000000000}{\*\falt Univers 45 Light}\fcharset0 Univers 45 Light;}
+{\f9 \froman\fprq2 \fcharset238 Times New Roman CE;}
+{\f10 \froman\fprq2 \fcharset204 Times New Roman Cyr;}
+{\f11 \froman\fprq2 \fcharset161 Times New Roman Greek;}
+{\f12 \froman\fprq2 \fcharset162 Times New Roman Tur;}
+{\f13 \fbidi\froman\fprq2 \fcharset177 Times New Roman (Hebrew);}
+{\f14 \fbidi\froman\fprq2 \fcharset178 Times New Roman (Arabic);}
+{\f15 \froman\fprq2 \fcharset186 Times New Roman Baltic;}
+{\f16 \froman\fprq2 \fcharset163 Times New Roman (Vietnamese);}
+{\f17 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset0 Batang Western;}
+{\f18 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset238 Batang CE;}
+{\f19 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset204 Batang Cyr;}
+{\f20 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset161 Batang Greek;}
+{\f21 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset162 Batang Tur;}
+{\f22 \froman\fprq2 {\*\falt \'a9\'f6UAA}\fcharset186 Batang Baltic;}
+{\f23 \fswiss\fprq2 \fcharset238 Calibri CE;}
+{\f24 \fswiss\fprq2 \fcharset204 Calibri Cyr;}
+{\f25 \fswiss\fprq2 \fcharset161 Calibri Greek;}
+{\f26 \fswiss\fprq2 \fcharset162 Calibri Tur;}
+{\f27 \fswiss\fprq2 \fcharset186 Calibri Baltic;}
+{\f28 \fswiss\fprq2 \fcharset163 Calibri (Vietnamese);}
+{\f29 \froman\fprq2 \fcharset0 @Batang Western;}
+{\f30 \froman\fprq2 \fcharset238 @Batang CE;}
+{\f31 \froman\fprq2 \fcharset204 @Batang Cyr;}
+{\f32 \froman\fprq2 \fcharset161 @Batang Greek;}
+{\f33 \froman\fprq2 \fcharset162 @Batang Tur;}
+{\f34 \froman\fprq2 \fcharset186 @Batang Baltic;}
+{\f35 \froman\fprq2 {\*\panose 05050102010706020507}\fcharset2 Symbol;}
+{\f36 \fnil\fprq2 {\*\panose 05000000000000000000}\fcharset2 Wingdings;}
+{\f37 \fmodern\fprq1 \fcharset238 Courier New CE;}
+{\f38 \fmodern\fprq1 \fcharset204 Courier New Cyr;}
+{\f39 \fmodern\fprq1 \fcharset161 Courier New Greek;}
+{\f40 \fmodern\fprq1 \fcharset162 Courier New Tur;}
+{\f41 \fbidi\fmodern\fprq1 \fcharset177 Courier New (Hebrew);}
+{\f42 \fbidi\fmodern\fprq1 \fcharset178 Courier New (Arabic);}
+{\f43 \fmodern\fprq1 \fcharset186 Courier New Baltic;}
+{\f44 \fmodern\fprq1 \fcharset163 Courier New (Vietnamese);}
+{\f45 \fswiss\fprq2 {\*\panose 020b0604030504040204}\fcharset0 Tahoma;}
+{\f46 \fswiss\fprq2 \fcharset238 Arial CE;}
+{\f47 \fswiss\fprq2 \fcharset204 Arial Cyr;}
+{\f48 \fswiss\fprq2 \fcharset161 Arial Greek;}
+{\f49 \fswiss\fprq2 \fcharset162 Arial Tur;}
+{\f50 \fbidi\fswiss\fprq2 \fcharset177 Arial (Hebrew);}
+{\f51 \fbidi\fswiss\fprq2 \fcharset178 Arial (Arabic);}
+{\f52 \fswiss\fprq2 \fcharset186 Arial Baltic;}
+{\f53 \fswiss\fprq2 \fcharset163 Arial (Vietnamese);}
+{\f54 \fswiss\fprq2 \fcharset238 Tahoma CE;}
+{\f55 \fswiss\fprq2 \fcharset204 Tahoma Cyr;}
+{\f56 \fswiss\fprq2 \fcharset161 Tahoma Greek;}
+{\f57 \fswiss\fprq2 \fcharset162 Tahoma Tur;}
+{\f58 \fbidi\fswiss\fprq2 \fcharset177 Tahoma (Hebrew);}
+{\f59 \fbidi\fswiss\fprq2 \fcharset178 Tahoma (Arabic);}
+{\f60 \fswiss\fprq2 \fcharset186 Tahoma Baltic;}
+{\f61 \fswiss\fprq2 \fcharset163 Tahoma (Vietnamese);}
+{\f62 \fswiss\fprq2 \fcharset222 Tahoma (Thai);}}
+<StyleSheet>
+{\stylesheet
+{\St \cs3 {\StB \f1\cf11 }{\StN tw4winPopup}}
+{\St \cs4 {\StB \f1\cf10 }{\StN tw4winJump}}
+{\St \cs5 {\StB \f1\cf15 }{\StN tw4winExternal}}
+{\St \cs6 {\StB \f1\cf6 }{\StN tw4winInternal}}
+{\St \cs7 \additive\ssemihidden {\StN Default Paragraph Font}}
+{\St \ts8 \snext11\ssemihidden {\StB \tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv\ql\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\af3\afs20\ltrch\fs20\loch\f3\hich\af3\dbch\af4\cgrid0 }{\StN Normal Table}}
+{\St \cs10 \additive {\StB \b\fs18\cf1 }{\StN A0}}
+{\St \cs11 \additive {\StB \fs20\cf1 }{\StN A8}}
+{\St \cs14 \additive {\StB \fs16\cf1 }{\StN A5}}
+{\St \cs18 \additive {\StB \fs16\cf1 }{\StN A7}}
+{\St \cs22 \additive {\StB \b\fs16\cf1 }{\StN A6}}
+{\St \cs25 \additive {\StB \b\fs14\cf1 }{\StN A10}}
+{\St \cs27 \additive {\StB \fs8\cf1 }{\StN A12}}
+{\St \cs34 \additive {\StB \fs14\cf1 }{\StN A14}}
+{\St \ts36 \sbasedon11\snext16 {\StB \tsrowd\trbrdrt\brdrs\brdrw10\trbrdrl\brdrs\brdrw10\trbrdrb\brdrs\brdrw10\trbrdrr\brdrs\brdrw10\trbrdrh\brdrs\brdrw10\trbrdrv\brdrs\brdrw10\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv\ql\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\af3\afs20\alang1025\ltrch\f5\fs20\cgrid0 }{\StN Table Grid}}
+{\St \cs37 \additive \ssemihidden {\StB \ul\cf2 }{\StN Hyperlink}}
+{\St \cs41 \additive {\StB \b }{\StN Strong}}
+{\St \cs44 \additive \slink21\slocked\ssemihidden {\StB \f45\fs16 }{\StN Car Car}}
+{\St \cs46 \additive \sbasedon10 {\StB \rtlch\af3\ltrch }{\StN apple-converted-space}}
+{\St \cs47 \additive {\StN style67}}
+{\St \cs50 \additive \slink21\slocked\ssemihidden {\StB \fs16\loch\f45\hich\af45\dbch\af3 }{\StN Car Car4}}
+{\St \cs52 \additive \slink23\slocked {\StB \fs24\loch\f2\hich\af2\dbch\af3 }{\StN Car Car3}}
+{\St \cs54 \additive \slink25\slocked {\StB \fs24\loch\f2\hich\af2\dbch\af3 }{\StN Car Car2}}
+{\St \cs55 \additive \ssemihidden {\StB \fs16 }{\StN annotation reference}}
+{\St \cs57 \additive \slink28\slocked\ssemihidden {\StB \fs20\loch\f2\hich\af2\dbch\af3 }{\StN Car Car1}}}
+</RTF Preamble>
+<TrU>
+<Quality>91
+<CrU>BGE_REFERENCIA_OCTUBRE_2013
+<CrD>30102013, 10:01
+<Seg L=ES-EM>Essenca Logística mejora su productividad con la implementación de dispositivos móviles de Solutions
+<Seg L=EN-US>Essenca Logística Has Improved Its Productivity by Adopting Mobile Devices from Solutions
+</TrU>
+<TrU>
+<Quality>81
+<CrU>BGE_REFERENCIA_OCTUBRE_2013
+<CrD>30102013, 10:01
+<Seg L=ES-EM>La renovación de procesos con nuevos equipamientos beneficiará directamente a clientes y pacientes que utilizan medicamentos y alimentación parenteral suministrados por el grupo
+<Seg L=EN-US>Updating processes with new equipment will translate to direct benefits for customers and patients who use the company\rquote s medications and parenteral nutrition formulas
+</TrU>
