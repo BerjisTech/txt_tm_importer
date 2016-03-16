@@ -79,6 +79,7 @@ module TxtTmImporter
         next if index.eql?(0)
         timestamp = create_timestamp(line.split("\t")[0])
         @doc[:tu][:creation_date] = timestamp unless timestamp.nil?
+        generate_unique_id
         write_tu
         write_seg(remove_wordfast_tags(line_array[4]), 'source', line_array[3]) unless line_array[4].nil?
         write_seg(remove_wordfast_tags(line_array[6]), 'target', line_array[5]) unless line_array[6].nil?
@@ -159,7 +160,6 @@ module TxtTmImporter
     def write_seg(string, role, language)
       return if string.nil?
       text = PrettyStrings::Cleaner.new(string).pretty.gsub("\\","&#92;").gsub("'",%q(\\\'))
-      return if text.nil? || text.empty?
       word_count = text.gsub("\s+", ' ').split(' ').length
       @doc[:seg][:vals] << [@doc[:tu][:id], role, word_count, language, text, @doc[:tu][:creation_date]]
     end
