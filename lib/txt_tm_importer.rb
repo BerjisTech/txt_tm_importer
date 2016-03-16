@@ -73,6 +73,7 @@ module TxtTmImporter
 
     def import_wordfast_file
       wordfast_lines.each_with_index do |line, index|
+        next if line.empty? || line.gsub(/\s+/, '').empty?
         line_array = line.split("\t")
         @doc[:source_language] = line_array[3].gsub(/%/, '').gsub(/\s/, '') if index.eql?(0)
         @doc[:target_language] = line_array[5].gsub(/%/, '').gsub(/\s/, '') if index.eql?(0)
@@ -96,7 +97,7 @@ module TxtTmImporter
         if line.include?('<Seg')
           write_tu if tu_tracker.eql?(1)
           tu_tracker = 0 if tu_tracker > 0
-          language = line.scan(/(?<=<Seg L=)\S+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)\S+(?=>)/).empty?
+          language = line.scan(/(?<=<Seg L=)[^>]+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)[^>]+(?=>)/).empty?
           if role_counter.eql?(0)
             write_seg(line.scan(/(?<=>).+/)[0], 'source', language)
             role_counter += 1
@@ -111,7 +112,11 @@ module TxtTmImporter
 
     def wordfast_stats
       lines = wordfast_lines
-      @doc[:tu][:counter] = lines.size - 1
+      lines.each_with_index do |line, index|
+        next if line.empty? || line.gsub(/\s+/, '').empty?
+        next if index.eql?(0)
+        @doc[:tu][:counter] += 1
+      end
       @doc[:seg][:counter] = @doc[:tu][:counter] * 2
       @doc[:source_language] = lines[0].split("\t")[3].gsub(/%/, '').gsub(/\s/, '')
       @doc[:target_language] = lines[0].split("\t")[5].gsub(/%/, '').gsub(/\s/, '')
@@ -124,8 +129,8 @@ module TxtTmImporter
       role_counter = 0
       @text.each_line do |line|
         if line.include?('<Seg L=')
-          @doc[:source_language] = line.scan(/(?<=<Seg L=)\S+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)\S+(?=>)/).empty? && role_counter.eql?(0)
-          @doc[:target_language] = line.scan(/(?<=<Seg L=)\S+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)\S+(?=>)/).empty? && role_counter.eql?(1)
+          @doc[:source_language] = line.scan(/(?<=<Seg L=)[^>]+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)\S+(?=>)/).empty? && role_counter.eql?(0)
+          @doc[:target_language] = line.scan(/(?<=<Seg L=)[^>]+(?=>)/)[0] if !line.scan(/(?<=<Seg L=)\S+(?=>)/).empty? && role_counter.eql?(1)
           role_counter += 1 if role_counter.eql?(0)
         end
         @doc[:language_pairs] << [@doc[:source_language], @doc[:target_language]] if !@doc[:source_language].nil? && !@doc[:target_language].nil? && role_counter > 0
