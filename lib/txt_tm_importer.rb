@@ -75,16 +75,30 @@ module TxtTmImporter
       wordfast_lines.each_with_index do |line, index|
         next if line.empty? || line.gsub(/\s+/, '').empty?
         line_array = line.split("\t")
-        @doc[:source_language] = line_array[3].gsub(/%/, '').gsub(/\s/, '') if index.eql?(0)
-        @doc[:target_language] = line_array[5].gsub(/%/, '').gsub(/\s/, '') if index.eql?(0)
+        @doc[:source_language] = line_array[3].gsub(/%/, '').gsub(/\s/, '')
+        @doc[:target_language] = line_array[5].gsub(/%/, '').gsub(/\s/, '')
         next if index.eql?(0)
         timestamp = create_timestamp(line.split("\t")[0])
         @doc[:tu][:creation_date] = timestamp unless timestamp.nil?
         generate_unique_id
         write_tu
-        write_seg(remove_wordfast_tags(line_array[4]), 'source', line_array[3]) unless line_array[4].nil?
-        write_seg(remove_wordfast_tags(line_array[6]), 'target', line_array[5]) unless line_array[6].nil?
+        write_seg(remove_wordfast_tags(line_array[4]), 'source', @doc[:source_language]) unless line_array[4].nil?
+        write_seg(remove_wordfast_tags(line_array[6]), 'target', @doc[:target_language]) unless line_array[6].nil?
       end
+    end
+
+    def wordfast_stats
+      lines = wordfast_lines
+      lines.each_with_index do |line, index|
+        next if line.empty? || line.gsub(/\s+/, '').empty?
+        next if index.eql?(0)
+        @doc[:tu][:counter] += 1
+        @doc[:source_language] = line.split("\t")[3].gsub(/%/, '').gsub(/\s/, '')
+        @doc[:target_language] = line.split("\t")[5].gsub(/%/, '').gsub(/\s/, '')
+        @doc[:language_pairs] << [@doc[:source_language], @doc[:target_language]]
+        @doc[:language_pairs] =  @doc[:language_pairs].uniq
+      end
+      @doc[:seg][:counter] = @doc[:tu][:counter] * 2
     end
 
     def import_twb_file
@@ -108,19 +122,6 @@ module TxtTmImporter
         end
         role_counter = 0 if line.include?('</TrU>')
       end
-    end
-
-    def wordfast_stats
-      lines = wordfast_lines
-      lines.each_with_index do |line, index|
-        next if line.empty? || line.gsub(/\s+/, '').empty?
-        next if index.eql?(0)
-        @doc[:tu][:counter] += 1
-      end
-      @doc[:seg][:counter] = @doc[:tu][:counter] * 2
-      @doc[:source_language] = lines[0].split("\t")[3].gsub(/%/, '').gsub(/\s/, '')
-      @doc[:target_language] = lines[0].split("\t")[5].gsub(/%/, '').gsub(/\s/, '')
-      @doc[:language_pairs] << [@doc[:source_language], @doc[:target_language]]
     end
 
     def twb_export_file_stats
